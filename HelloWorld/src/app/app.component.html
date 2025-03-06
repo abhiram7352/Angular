@@ -1,0 +1,13 @@
+
+<div>
+  <h1>Hello {{this.userName}} from BridgeLabz</h1>
+  <img [src]="imgUrl" (click)="onClick($event)" alt="The BridgeLabz logo: a Bridge to Employment through Lab Works"
+  />
+</div>
+
+ <div class="container">
+ <input (input)="onInput($event)" [(ngModel)]="userName">
+ <span class="error-output">{{this.nameError}}</span>
+</div>
+
+<router-outlet></router-outlet>
